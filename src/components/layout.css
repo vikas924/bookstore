@@ -1,0 +1,116 @@
+.navbar {
+  width: 100%;
+  position: absolute;
+}
+
+.navdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--clr--neon);
+  height: 110px;
+  padding-inline: 1rem;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  padding-top: 110px;
+  padding-inline: 3rem;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+.heading {
+  padding-top: 1rem;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+}
+
+.link {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--clr--neon);
+  position: relative;
+  margin-left: 20px;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbutton {
+  display: none;
+  cursor: pointer;
+  color: var(--clr--neon);
+  border: 1px solid var(--clr--neon);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr--neon), 0 0 0.5em 0 var(--clr--neon);
+  background: none;
+  padding: 0.1rem;
+  height: 2rem;
+  padding-inline: 1rem;
+  font-size: 0.8rem;
+}
+
+.button {
+  cursor: pointer;
+  color: var(--clr--neon);
+  border: 1px solid var(--clr--neon);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr--neon), 0 0 0.5em 0 var(--clr--neon);
+  background: none;
+  width: 80px;
+  height: 40px;
+  font-size: 0.8rem;
+}
+
+.linkbutton {
+  cursor: pointer;
+  background: transparent;
+  width: 100%;
+  border: none;
+  padding-block: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+  .navbutton {
+    display: block;
+    z-index: 99;
+  }
+
+  .links {
+    display: none;
+    padding-top: 0.8rem;
+  }
+
+  .hide {
+    display: block;
+    height: 100%;
+    background-color: var(--clr--bg);
+    position: fixed;
+    width: 100%;
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+
+  .calcmain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calculator {
+    width: 85%;
+  }
+
+  .link {
+    margin: 0;
+  }
+}

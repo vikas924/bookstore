@@ -1,0 +1,16 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --clr--neon: hsl(188, 94%, 39%);
+  --clr--bg: hsl(0, 0%, 100%);
+}
+
+.wraper {
+  min-height: 100vh;
+  color: var(--clr--neon);
+  background-color: var(--clr--bg);
+}
