@@ -4,12 +4,11 @@ import Form from './form';
 
 export default function Books() {
   function getInitialbooks() {
-    // getting stored items
     const temp = localStorage.getItem('books');
     const savedBooks = JSON.parse(temp);
     return savedBooks || [
-      { id: 1, title: 'hello', author: 'noone' },
-      { id: 2, title: 'hel', author: 'one' },
+      { id: 1, title: 'strangers', author: 'ben' },
+      { id: 2, title: 'life', author: 'kevin' },
     ];
   }
 
@@ -17,7 +16,6 @@ export default function Books() {
   const [data, setData] = useState({ title: '', author: '' });
 
   useEffect(() => {
-    // storing todos items
     const temp = JSON.stringify(books);
     localStorage.setItem('books', temp);
   }, [books]);
