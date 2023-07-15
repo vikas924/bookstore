@@ -30,9 +30,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Math Magician full website] <a name="about-project"></a>
+# 📖 [Bookstore initial setup] <a name="about-project"></a>
 
-Math Magician website is three page website with calculate functionality and quote page.
+Bookstore setup is creating initial setup of two pages and show list of pages in one page.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -131,7 +131,7 @@ You can deploy this project using:
 GitHub Pages
 
 ```sh
-  [https://vikas924.github.io/math-magician/]
+  []
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -148,8 +148,8 @@ GitHub Pages
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add calculator Ui]**
-- [ ] **[Add calculator functionality]**
+- [ ] **[Add styles]**
+- [ ] **[Add remove funtionality]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
