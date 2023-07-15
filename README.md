@@ -65,7 +65,7 @@ Bookstore setup is creating initial setup of two pages and show list of pages in
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://vikas924.github.io/math-magician/)
+- [Live Demo Link](https://melodious-sprite-27f6b3.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,10 +128,10 @@ To run tests, run the following command:
 
 You can deploy this project using:
 
-GitHub Pages
+netlify
 
 ```sh
-  []
+  [https://melodious-sprite-27f6b3.netlify.app/]
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
