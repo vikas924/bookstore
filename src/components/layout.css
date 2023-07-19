@@ -1,0 +1,181 @@
+.navbar {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--clr--neon);
+  height: 110px;
+  padding-inline: 1rem;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 110px;
+  padding-inline: 3rem;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  gap: inherit;
+}
+
+.paradiv {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading {
+  padding-top: 1rem;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+}
+
+.link {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--clr--neon);
+  position: relative;
+  margin-left: 20px;
+}
+
+::placeholder {
+  color: var(--clr--neon);
+  border: var(--clr--neon);
+  opacity: 1;
+}
+
+.span {
+  color: black;
+  font-weight: 700;
+}
+
+.header {
+  padding-left: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbutton {
+  display: none;
+  cursor: pointer;
+  color: var(--clr--neon);
+  border: 1px solid var(--clr--neon);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr--neon), 0 0 0.5em 0 var(--clr--neon);
+  background: none;
+  padding: 0.1rem;
+  height: 2rem;
+  padding-inline: 1rem;
+  font-size: 0.8rem;
+}
+
+.form {
+  max-width: 25rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.forminput {
+  width: 97%;
+  font-size: 0.9rem;
+  padding-block: 0.5rem;
+  padding-inline: 0.3rem;
+  border: 0.1rem solid var(--clr--neon);
+}
+
+.forminput:focus {
+  border: 0.1rem solid var(--clr--neon);
+  outline: none;
+}
+
+.add {
+  border-radius: 0;
+  border: 0.1rem solid var(--clr--neon);
+  background-color: var(--clr--bg);
+  color: var(--clr--neon);
+  padding-block: 0.3rem;
+  padding-inline: 0.8rem;
+}
+
+.formbutton {
+  display: flex;
+  justify-content: flex-end;
+  padding-block: 0.3rem;
+}
+
+.button {
+  cursor: pointer;
+  color: var(--clr--neon);
+  border: 1px solid var(--clr--neon);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr--neon), 0 0 0.5em 0 var(--clr--neon);
+  background: none;
+  width: 4rem;
+  height: 1.8rem;
+  font-size: 0.8rem;
+}
+
+.linkbutton {
+  cursor: pointer;
+  background: transparent;
+  width: 100%;
+  border: none;
+  padding-block: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+  .navbutton {
+    display: block;
+    z-index: 99;
+  }
+
+  .links {
+    display: none;
+    padding-top: 0.8rem;
+  }
+
+  .hide {
+    display: block;
+    height: 100%;
+    background-color: var(--clr--bg);
+    position: fixed;
+    width: 100%;
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+
+  .calcmain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calculator {
+    width: 85%;
+  }
+
+  .link {
+    margin: 0;
+  }
+}
