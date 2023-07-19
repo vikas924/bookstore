@@ -5,7 +5,6 @@ import Form from './form';
 
 export default function Books() {
   const curentstate = useSelector((state) => state.books.book);
-  console.log(curentstate);
 
   const Show = curentstate.map((book) => (<Book key={book.id} list={book} />));
   return (
