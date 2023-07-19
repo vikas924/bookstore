@@ -30,9 +30,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Bookstore initial setup] <a name="about-project"></a>
+# 📖 [Bookstore add reducer and actions ] <a name="about-project"></a>
 
-Bookstore setup is creating initial setup of two pages and show list of pages in one page.
+In this project i used redux toolkit to add store and add books slice with add and remove reducer and categories slice to add checkstatus reducer.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -149,7 +149,7 @@ netlify
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Add styles]**
-- [ ] **[Add remove funtionality]**
+- [ ] **[Use api]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -1,7 +1,27 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { addbook } from '../redux/books/booksSlice';
 
-export default function Form({ submit, change, data }) {
+export default function Form() {
+  const state = useSelector((state) => state.books.book);
+  const [data, setData] = useState({ title: '', author: '' });
+  const dispatch = useDispatch();
+
+  const submit = () => {
+    if ((data.title !== '') && (data.author !== '')) {
+      dispatch(addbook({
+        id: (state.length + 1),
+        title: data.title,
+        author: data.author,
+      }));
+      setData({ title: '', author: '' });
+    }
+  };
+
+  const change = (e) => {
+    setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
   return (
     <>
       <h2 id="heading2">Add a new book</h2>
@@ -21,12 +41,3 @@ export default function Form({ submit, change, data }) {
     </>
   );
 }
-
-Form.propTypes = {
-  submit: PropTypes.func.isRequired,
-  change: PropTypes.func.isRequired,
-  data: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
-  }).isRequired,
-};
