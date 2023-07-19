@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { remove } from '../redux/books/booksSlice';
+import { removebook } from '../redux/books/booksSlice';
 
 export default function Book({ list }) {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ export default function Book({ list }) {
         {' '}
         {list.author}
       </p>
-      <button className="button" type="button" onClick={() => dispatch(remove(list.id))}>remove</button>
+      <button className="button" type="button" onClick={() => dispatch(removebook(list.id))}>remove</button>
     </div>
   );
 }

@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { add } from '../redux/books/booksSlice';
+import { addbook } from '../redux/books/booksSlice';
 
 export default function Form() {
-  const state = useSelector((state) => state.book);
+  const state = useSelector((state) => state.books.book);
   const [data, setData] = useState({ title: '', author: '' });
   const dispatch = useDispatch();
 
   const submit = () => {
     if ((data.title !== '') && (data.author !== '')) {
-      dispatch(add({
+      dispatch(addbook({
         id: (state.length + 1),
         title: data.title,
         author: data.author,
