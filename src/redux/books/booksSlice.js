@@ -12,7 +12,7 @@ const bookSlice = createSlice({
       state.book.push(action.payload);
     },
     removebook: (state, action) => {
-      state.book = state.book.filter((book) => book.id !== action.id);
+      state.book = state.book.filter((item) => item.id !== action.payload);
     },
   },
 });
