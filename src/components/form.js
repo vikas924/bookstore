@@ -1,25 +1,16 @@
 import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { addbook } from '../redux/books/booksSlice';
+import { nanoid } from '@reduxjs/toolkit';
+import Addbutton from './addbutton';
 
 export default function Form() {
-  const state = useSelector((state) => state.books.book);
   const [data, setData] = useState({ title: '', author: '' });
-  const dispatch = useDispatch();
-
-  const submit = () => {
-    if ((data.title !== '') && (data.author !== '')) {
-      dispatch(addbook({
-        id: (state.length + 1),
-        title: data.title,
-        author: data.author,
-      }));
-      setData({ title: '', author: '' });
-    }
-  };
 
   const change = (e) => {
     setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const setdata = (data) => {
+    setData(data);
   };
 
   return (
@@ -35,7 +26,7 @@ export default function Form() {
         </div>
         {'\n'}
         <div className="formbutton">
-          <button type="button" onClick={submit} className="add">Add</button>
+          <Addbutton id={nanoid()} title={data.title} author={data.author} data={setdata} />
         </div>
       </form>
     </>
