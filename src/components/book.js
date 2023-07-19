@@ -1,13 +1,10 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removebook } from '../redux/books/booksSlice';
+import Removebutton from './removebutton';
 
 export default function Book({ list }) {
-  const dispatch = useDispatch();
-
   return (
-    <div key={list.id} className="paradiv">
+    <div key={list.item_id} className="paradiv">
       <p>
         {list.title}
         {' '}
@@ -15,14 +12,14 @@ export default function Book({ list }) {
         {' '}
         {list.author}
       </p>
-      <button className="button" type="button" onClick={() => dispatch(removebook(list.id))}>remove</button>
+      <Removebutton id={list.item_id} />
     </div>
   );
 }
 
 Book.propTypes = {
   list: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    item_id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
   }).isRequired,

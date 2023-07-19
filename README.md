@@ -30,9 +30,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Bookstore add reducer and actions ] <a name="about-project"></a>
+# 📖 [Bookstore connect redux] <a name="about-project"></a>
 
-In this project i used redux toolkit to add store and add books slice with add and remove reducer and categories slice to add checkstatus reducer.
+In this project i connect reducers with react components using usedispatcher and useselector hook for add and remove funtionality.
 
 ## 🛠 Built With <a name="built-with"></a>
 
