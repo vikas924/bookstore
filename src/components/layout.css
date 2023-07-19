@@ -135,6 +135,10 @@
   font-size: 0.8rem;
 }
 
+.statusbutton {
+  width: 6rem;
+}
+
 .linkbutton {
   cursor: pointer;
   background: transparent;

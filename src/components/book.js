@@ -1,8 +1,13 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import Button from './button';
+import { remove } from '../redux/books/booksSlice';
 
 export default function Book({ list }) {
+  const state = useSelector((state) => state.book);
+  console.log(state);
+  const dispatch = useDispatch();
+
   return (
     <div key={list.id} className="paradiv">
       <p>
@@ -12,7 +17,7 @@ export default function Book({ list }) {
         {' '}
         {list.author}
       </p>
-      <Button name="remove" />
+      <button className="button" type="button" onClick={() => dispatch(remove(list.id))}>remove</button>
     </div>
   );
 }
