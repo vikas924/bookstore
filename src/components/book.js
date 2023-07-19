@@ -1,11 +1,9 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { remove } from '../redux/books/booksSlice';
 
 export default function Book({ list }) {
-  const state = useSelector((state) => state.book);
-  console.log(state);
   const dispatch = useDispatch();
 
   return (
