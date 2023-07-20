@@ -30,9 +30,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Bookstore connect redux] <a name="about-project"></a>
+# 📖 [Bookstore connect api] <a name="about-project"></a>
 
-In this project i connect reducers with react components using usedispatcher and useselector hook for add and remove funtionality.
+In this project i use api to get, post and delete books using axios and asyncthunk.
 
 ## 🛠 Built With <a name="built-with"></a>
 
