@@ -1,19 +1,22 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { addbook } from '../redux/books/booksSlice';
+import { addbook, postBooks } from '../redux/books/booksSlice';
 
 export default function Addbutton({
   id, title, author, data,
 }) {
   const dispatch = useDispatch();
-  const submit = () => {
+  const submit = async () => {
     if ((title !== '') && (author !== '')) {
-      dispatch(addbook({
+      const adddata = {
         item_id: id,
         title,
         author,
-      }));
+        category: 'book',
+      };
+      dispatch(addbook(adddata));
+      await dispatch(postBooks(adddata));
       data({ title: '', author: '' });
     }
   };
