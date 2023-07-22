@@ -15,8 +15,7 @@ export default function Books() {
   const Show = curentstate.map((book) => (<Book key={book.item_id} list={book} />));
   return (
     <section id="List" className="page">
-      <h1 id="heading1">All Awesome books</h1>
-      <div id="list">
+      <div className="list">
         {Show}
       </div>
       <Form />
