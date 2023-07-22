@@ -22,13 +22,12 @@ export default function Header() {
       }));
     }
   }
-
   return (
     <header className="navbar">
       <div className="navwrap container">
         <h1 className="header">Bookstore CMS</h1>
         <nav className="navdiv container">
-          <ul className={`${data.class}`}>
+          <ul className={data.class}>
             <li>
               <button type="button" className="linkbutton" onClick={toggle}><Link to="/" className="link">Home</Link></button>
             </li>
