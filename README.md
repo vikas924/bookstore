@@ -30,9 +30,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Bookstore connect api] <a name="about-project"></a>
+# 📖 [Bookstore style] <a name="about-project"></a>
 
-In this project i use api to get, post and delete books using axios and asyncthunk.
+In this project i add styles for desktop view.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -148,8 +148,8 @@ netlify
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add styles]**
-- [ ] **[Use api]**
+- [ ] **[Make responsive]**
+- [ ] **[update category funtionality]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

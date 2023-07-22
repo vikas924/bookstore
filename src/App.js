@@ -8,12 +8,14 @@ import Books from './components/showbooks';
 function App() {
   return (
     <div className="wraper">
-      <Routes>
-        <Route element={<Layout />}>
-          <Route index element={<Books />} />
-          <Route path="Categories" element={<Categories />} />
-        </Route>
-      </Routes>
+      <div className="wrap">
+        <Routes>
+          <Route element={<Layout />}>
+            <Route index element={<Books />} />
+            <Route path="Categories" element={<Categories />} />
+          </Route>
+        </Routes>
+      </div>
     </div>
   );
 }

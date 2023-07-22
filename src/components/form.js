@@ -15,20 +15,19 @@ export default function Form() {
 
   return (
     <>
-      <h2 id="heading2">Add a new book</h2>
-      <form className="form">
-        <div>
-          <input type="text" name="title" id="title" className="forminput" placeholder="Title" value={data.title} onChange={change} />
-        </div>
-        {'\n'}
-        <div>
-          <input type="text" name="author" id="author" className="forminput" placeholder="Author" value={data.author} onChange={change} />
-        </div>
-        {'\n'}
-        <div className="formbutton">
-          <Addbutton id={nanoid()} title={data.title} author={data.author} data={setdata} />
-        </div>
-      </form>
+      <div className="line" />
+      <div className="addBook">
+        <h2 id="heading2">Add new book</h2>
+        <form className="form">
+          <input type="text" name="title" id="title" className="titleinput" placeholder="Title" value={data.title} onChange={change} />
+          {'\n'}
+          <input type="text" name="author" id="author" className="authorinput" placeholder="Author" value={data.author} onChange={change} />
+          {'\n'}
+          <div className="formbutton">
+            <Addbutton id={nanoid()} title={data.title} author={data.author} data={setdata} />
+          </div>
+        </form>
+      </div>
     </>
   );
 }

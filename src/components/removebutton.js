@@ -14,7 +14,7 @@ export default function Removebutton({
   };
   return (
     <>
-      <button className="button" type="button" onClick={() => handleclick(id)}>remove</button>
+      <button className="book1button book1difference" type="button" onClick={() => handleclick(id)}>remove</button>
     </>
   );
 }
