@@ -12,11 +12,10 @@
   --white-Three: #e8e8e8;
 }
 
-
 .wraper {
   background-color: var(--pale-grey);
   padding: 9.313rem 6.25rem 11.75rem;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
 }
 
 .wrap {
@@ -75,18 +74,17 @@
 
 .list {
   display: flex;
-  display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 .paradiv {
- display: flex;
- justify-content: space-between;
- padding: 2rem 1.688rem 1.6rem;
- border-radius: 4px;
- border: solid 1px #e8e8e8;
- background-color: #ffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1.688rem 1.6rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffff;
 }
 
 .bookfirstdivpara {
@@ -99,7 +97,7 @@
 
 .bookfirstdivheading {
   color: #121212;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   letter-spacing: -0.2px;
   font-weight: bold;
   font-size: 1.5rem;
@@ -107,7 +105,7 @@
 
 .bookfirstdivpara2 {
   margin: 4px 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
   color: #4386bf;
@@ -163,7 +161,7 @@
 
 .bookinnerdiv2para {
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
   color: #121212;
@@ -171,7 +169,7 @@
 }
 
 .bookinnerdiv2para2 {
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   color: #121212;
@@ -179,7 +177,7 @@
 }
 
 .bookinnerdiv2button {
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   padding: 7px 19px 8px 22px;
   border-radius: 3px;
   color: #ffff;
@@ -242,7 +240,6 @@
   background-color: #0290ff;
   cursor: pointer;
   padding: 0.5rem 1rem;
-
 }
 
 .status {
@@ -256,7 +253,7 @@
 
 .status h1 {
   color: #121212;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-weight: bold;
   font-size: 2rem;
 }

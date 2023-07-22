@@ -51,7 +51,6 @@ export default function Header() {
             color: '#0290ff', backgroundColor: '#fff', border: '1px solid #e8e8e8', fontSize: '1.2rem', borderRadius: '50%', padding: '5px',
           }}
           />
-
         </button>
       ) }
     </header>
