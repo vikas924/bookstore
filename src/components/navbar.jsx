@@ -39,17 +39,11 @@ export default function Header() {
       </div>
       {(data.render) ? (
         <button type="button" className="navbutton" aria-label="Save" onClick={toggle}>
-          <ImUser style={{
-            color: '#0290ff', backgroundColor: '#fff', border: '1px solid #e8e8e8', borderRadius: '50%', fontSize: '1.2rem', padding: '5px',
-          }}
-          />
+          <ImUser className="icon" />
         </button>
       ) : (
         <button type="button" className="navbutton" aria-label="Save" onClick={toggle}>
-          <ImUser style={{
-            color: '#0290ff', backgroundColor: '#fff', border: '1px solid #e8e8e8', fontSize: '1.2rem', borderRadius: '50%', padding: '5px',
-          }}
-          />
+          <ImUser className="icon" />
         </button>
       ) }
     </header>
